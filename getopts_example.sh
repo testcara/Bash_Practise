@@ -55,10 +55,10 @@ while getopts 'hsrd:f:' c
 do
   case $c in
   	h) usage ;;
-    s) set_variable ACTION SAVE ;;
-    r) set_variable ACTION RESTORE ;;
-    d) set_variable DB_DUMP $OPTARG ;;
-    f) set_variable TARBALL $OPTARG ;;
+	s) set_variable ACTION SAVE ;;
+	r) set_variable ACTION RESTORE ;;
+	d) set_variable DB_DUMP $OPTARG ;;
+	f) set_variable TARBALL $OPTARG ;;
   esac
 done
 
